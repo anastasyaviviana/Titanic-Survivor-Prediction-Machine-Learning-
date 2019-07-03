@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="{{url_for('static',filename='predictt.css')}}"
+    />   
+</head>
+<body>
+    <div class="container">
+            <div class="atas">
+                    <center>
+                    <h1 >Predicting the Survival of Titanic Passengers</h1>
+                    </center>
+            </div>
+            <div class="tengah">
+                    <form class="myForm" action="http://localhost:5000/">
+                        
+                        <p>
+                            <label>Sex :
+                            <h4>{{sex}}</h4>
+                            </label>
+                        </p>
+                        <p>
+                            <label>Age :
+                            <h4>{{age}}</h4>
+                            </label>
+                        </p>
+                        <p>
+                            <label>Who :
+                            <h4>{{who}}</h4>
+                            </label>
+                        </p>
+                        <p>
+                            <label>Adult Male :
+                            <h4>{{adultmale}}</h4>
+                            </label>
+                        </p>
+                        <p>
+                            <label>Town :
+                            <h4>{{town}}</h4>
+                            </label>
+                        </p>
+                        <p>
+                            <label>Class :
+                            <h4>{{pclass}}</h4>
+                            </label>
+                        </p>
+                        <p>
+                            <label>Sibling
+                            <h4>{{sibling}}</h4>
+                            </label>
+                        </p>
+                        <p>
+                            <label>Parent
+                            <h4>{{parent}}</h4>
+                            </label>
+                        </p>
+                        <p>
+                            <label>Fare
+                            <h4>{{fare}}</h4>
+                            </label>
+                        </p>
+                        <center>
+                        <p>
+                            <label>PREDICT
+                            <h4>{{predict}}</h4>
+                            </label>
+                        </p>
+                        </center>
+                    </form>
+            </div>      
+            <div class="bawah">
+                <center> 
+                <p><button>Predict Again</button></p>
+                <h5>Anastasya Viviana Gunawan - Purwadhika JCDS</h5>
+                </center>
+            </div>      
+            
+    
+</body>
+</html>

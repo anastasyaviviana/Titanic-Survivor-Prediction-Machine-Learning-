@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="{{url_for('static',filename='homee.css')}}"
+    />           
+</head>
+<body>
+    <div class="container">
+        <div class="atas">
+                <center>
+                <h1 >Predicting the Survival of Titanic Passengers</h1>
+                </center>
+        </div>
+        <div class="tengah">
+                <form class="myForm" method="post" enctype="application/x-www-form-urlencoded" action="http://localhost:5000/hasil">
+                    <fieldset>
+                            <legend>Sex</legend>
+                            <p><label class="choice"> <input type="radio" name="sex" required value="Female"> Female </label></p>
+                            <p><label class="choice"> <input type="radio" name="sex" required value="Male" > Male </label></p>
+                            
+                    </fieldset>
+                    <p>
+                        <label>Age
+                        <input type="text" name="age" required>
+                        </label>
+                    </p>
+                    <fieldset>
+                            <legend>Town</legend>
+                            <p><label class="choice"> <input type="radio" name="town" required value="Cherbourg">Cherbourg </label></p>
+                            <p><label class="choice"> <input type="radio" name="town" required value="Queenstown">Queenstown</label></p>
+                            <p><label class="choice"> <input type="radio" name="town" required value="Southampton">Southampton</label></p>
+                    </fieldset>
+                    <fieldset>
+                            <legend>Class</legend>
+                            <p><label class="choice"> <input type="radio" name="class" required value="Economy"> Economy </label></p>
+                            <p><label class="choice"> <input type="radio" name="class" required value="Business"> Business </label></p>
+                            <p><label class="choice"> <input type="radio" name="class" required value="Executive"> Executive </label></p>
+                    </fieldset>
+                    <p>
+                        <label>Sibling
+                        <input type="text" name="sibsp" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Parent
+                        <input type="text" name="parch" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Fare
+                        <input type="text" name="fare" required>
+                        </label>
+                    </p>
+                    <center>
+                    <p><button>Predict</button></p>
+                    </center>
+                </form>
+        </div>
+        <div class="bawah"> 
+            <h5>Anastasya Viviana Gunawan - Purwadhika JCDS</h5> 
+        </div>
+    </div>
+    
+</body>
+</html>
